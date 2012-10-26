@@ -1,5 +1,15 @@
 GIT
-  remote: git://github.com/cloudfoundry/uaa
+  remote: https://github.com/cloudfoundry/stager-client.git
+  revision: 04c2aee9ceed39571d47704a42a70beb472503b9
+  ref: 04c2aee9
+  specs:
+    stager-client (0.0.2)
+      eventmachine
+      nats
+      yajl-ruby
+
+GIT
+  remote: https://github.com/cloudfoundry/uaa
   revision: 792e78165f7702e1e9d512198e6cf9a035ecddab
   ref: 792e7816
   specs:
@@ -13,7 +23,7 @@ GIT
       thor
 
 GIT
-  remote: git://github.com/cloudfoundry/vcap-common.git
+  remote: https://github.com/cloudfoundry/vcap-common.git
   revision: 7b7dd74ddffeb5293af2325f0ed6efb35e226774
   ref: 7b7dd74d
   specs:
@@ -30,20 +40,10 @@ GIT
       yajl-ruby
 
 GIT
-  remote: git://github.com/cloudfoundry/vcap-concurrency.git
+  remote: https://github.com/cloudfoundry/vcap-concurrency.git
   revision: 2a5b0179642cb3d3e7f912a6453ec5731979d115
   specs:
     vcap-concurrency (0.1.0)
-
-GIT
-  remote: https://github.com/cloudfoundry/stager-client.git
-  revision: 04c2aee9ceed39571d47704a42a70beb472503b9
-  ref: 04c2aee9
-  specs:
-    stager-client (0.0.2)
-      eventmachine
-      nats
-      yajl-ruby
 
 GEM
   remote: http://rubygems.org/
@@ -65,8 +65,8 @@ GEM
       em-socksify
       eventmachine
       http_parser.rb (>= 0.5.1)
-    em-socksify (0.1.0)
-      eventmachine
+    em-socksify (0.2.1)
+      eventmachine (>= 1.0.0.beta.4)
     eventmachine (1.0.0)
     grape (0.2.2)
       activesupport
@@ -86,9 +86,9 @@ GEM
     http_parser.rb (0.5.3)
     httpclient (2.2.5)
     i18n (0.6.1)
-    interact (0.4.6)
+    interact (0.4.8)
     json_pure (1.7.4)
-    launchy (2.1.1)
+    launchy (2.1.2)
       addressable (~> 2.3)
     listen (0.5.3)
     machinist (1.0.6)
