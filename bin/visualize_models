@@ -19,6 +19,8 @@ Sequel::Model.plugin :timestamps
 Sequel::Model.plugin :validation_helpers
 Sequel::Model.plugin :subclasses
 
+require 'cloud_controller/db'
+
 Sequel.extension :migration
 migrations_dir ||= File.expand_path("../../db/migrations", __FILE__)
 Sequel::Migrator.apply(db, migrations_dir)

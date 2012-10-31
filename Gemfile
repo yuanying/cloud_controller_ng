@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "highline"
 gem "rake"
 gem "bcrypt-ruby"
 gem 'eventmachine', "~> 1.0.0"
